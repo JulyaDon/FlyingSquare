@@ -35,13 +35,13 @@ public class Controller implements Initializable{
             gs.setFill(Color.BLACK);
             r.setLocation((int)r.getX()+1 * n, (int)r.getY()+1 * k);
             gs.fillRect(r.getX(),r.getY(),r.getWidth(),r.getHeight());
-            if (r.getX() >= canvasC.getWidth() || r.getX() < 0){
+            if (r.getX()+30 >= canvasC.getWidth() || r.getX() < 0){
                 //r.setLocation((int)r.getX()-1, (int)r.getY());
                 //gs.fillRect(r.getX(),r.getY(),r.getWidth(),r.getHeight());
                 n = n * -1;
             }
 
-            if( r.getY() >= canvasC.getHeight() || r.getY() < 0){
+            if( r.getY()+30 >= canvasC.getHeight() || r.getY() < 0){
                 k = k * -1;
             }
 
